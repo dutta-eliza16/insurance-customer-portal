@@ -5,8 +5,8 @@ import { useDispatch, useSelector } from "react-redux";
 
 import type { RootState, AppDispatch } from "@/store/store";
 
-import { setUsers, setLoading, setError } from "@/store/userSlice";
-import type { User } from "@/store/userSlice";
+import { setUsers, setLoading, setError } from "@/store/slices/userSlice";
+import type { User } from "@/store/slices/userSlice";
 
 function maskEmail(email: string): string {
 	const [username, domain] = email.split("@");
